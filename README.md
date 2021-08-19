@@ -1,4 +1,4 @@
-# centos8-shell-docker
+# centos7-shell-docker
 
 sometimes you need a CentOS7 environment but a VM would be overkill
 

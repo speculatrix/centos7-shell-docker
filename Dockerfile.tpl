@@ -1,5 +1,5 @@
 # Dockerfile.tpl
-# for making a Docker image which gives you a basic CentOS8 shell
+# for making a Docker image which gives you a basic CentOS7 shell
 # edit the .tpl file and not the derived Dockerfile file.
 
 
