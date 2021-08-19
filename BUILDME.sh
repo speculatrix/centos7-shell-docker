@@ -22,8 +22,6 @@ fi
 
 sed -e "s/MYUSERNAME/$MYUSERNAME/g" < Dockerfile.tpl > Dockerfile
 
-#docker build --network=host --build-arg "http_proxy=${http_proxy}" --build-arg "https_proxy=${https_proxy}" -t "$TAG" .
-
 docker build --network=host "${PROXY_ARGS[@]}" -t "${TAG}-${MYUSERNAME}" .
 
 
