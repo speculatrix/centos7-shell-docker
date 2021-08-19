@@ -15,10 +15,7 @@ fi
 
 echo -n "What username? "
 read -r MYUSERNAME
-if [ "$MYUSERNAME" == "" ] ; then
-	echo "Error, blank input"
-	exit 1
-fi
+[ "$MYUSERNAME" == "" ] && echo "Error, blank input" && exit 1
 
 sed -e "s/MYUSERNAME/$MYUSERNAME/g" < Dockerfile.tpl > Dockerfile
 
